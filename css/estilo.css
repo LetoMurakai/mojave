@@ -1,0 +1,413 @@
+/*************Configurações padrões************/
+body, html{
+	margin: 0;
+	padding: 0;
+	font: 16px "Lato", sans-serif;
+	color: #777;
+	height: 200%;
+	scroll-behavior: smooth;
+}
+
+.container-principal{
+	width: auto;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}		
+
+.conteudo {
+	color: #777;
+	background-color: white;
+	text-align: justify;
+	padding: 50px 80px;
+	box-shadow: 0px 15px 30px 50px;
+}
+
+.conteudo-card{
+	background-color: white;
+	color: #777;
+	text-align: justify;
+	padding: 50px 80px;
+}
+
+h3{   
+	font-family: "SF Pro Text Medium";
+	text-transform: uppercase;
+	color: #111;
+	text-align: center;
+}
+
+p{
+	font-family: "SF Pro Text RegularItalic";
+	margin-bottom: 20px;
+}
+
+.conteudo-titulo{
+	position: absolute;
+	left: 0%;
+	top: 45%;
+	width: 100%;
+	text-align: center;
+}
+
+.conteudo-titulo span.titulo{
+	font-family: "SF Pro Text Heavy";
+	color: #fff;
+	background-color: #111;
+	padding: 18px;
+	font-size: 25px;
+	letter-spacing: 3px;
+}
+
+/************** Barra de Navegação **************/
+header {
+	width: 100%;
+	background: #f1f1f1;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	position: fixed;
+	z-index: 999;
+}
+
+header img{
+	margin-left: 60px;
+	width: 60px;
+	float: left;
+}
+
+.btndrop{
+	display: none;
+}
+/*********** Menu Navegação ************/
+nav{
+	padding-top: 10px;
+	margin: -2px 40px;
+	font-family: "SF Pro Text Medium";
+	float: right;
+}
+nav ul{
+	display: block;
+}
+
+nav ul ul li{
+	display: flex;
+}
+
+nav ul li a:link, a:visited {
+	margin-right: 15px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #a3a3a3;
+}
+
+nav ul li a:hover{
+	color: rgba(5,60,256,0.3);
+}
+
+nav ul ul li a {
+	padding: 10px;
+	width: 120px;
+	font-size: 0.9em;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #a3a3a3;
+	display: inline-block;
+}
+
+nav ul li{
+	display: inline-block;
+}
+
+nav ul ul li {
+	display: block;
+	margin: 5px;
+	padding: 3px;
+}
+
+nav ul ul li a:hover {
+	color: rgba(5,60,256,0.3); 
+}
+
+/************* Drop-down ************/
+nav ul li:hover .sub-menu, .sub-menu-download, .sub-menu-contato{
+	display: block;
+}
+
+nav ul li .sub-menu {
+	position: absolute;
+	display: none;
+	right: 180px;
+	background: #f1f1f1;
+	border-radius: 0px 0px 5px 5px;
+	box-shadow: 2px 8px 3px rgba(0,0,0,0.1);
+}
+
+nav ul li .sub-menu-download {   
+	right: 150px;  
+}
+
+nav ul li .sub-menu-contato {
+	right: 85px;
+}
+
+/*************Efeito parallax*************/
+.caixa1, .caixa2, .caixa3, .caixa4{
+	position: relative;
+	min-height: 25%;
+	opacity: 0.9;
+	z-index: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.caixa1{
+	background-image: url(imagens/macosdia.jpg);
+}
+
+.caixa2{
+	background-image: url(imagens/macostarde.jpg);
+}
+
+.caixa3{
+	background-image: url(imagens/macosnoite.jpg);
+}
+.caixa4{
+	background-image: url(imagens/apple-blue.png);
+	width: 100%;
+	height: 100%;
+}
+
+/************ Card *************/
+.card{
+	margin: 1.50em;
+	position: relative;
+	text-align: justify;
+	background-color: #fff;
+	border-radius: 0.25em;
+	border: 1px solid rgba(0,0,0,0.1);
+	box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.1);
+}
+
+.corpo-card{
+	 padding: 1.25em;
+}
+
+.titulo-card{
+	text-transform: uppercase;
+	font-size: 1.5em;
+	line-height: 1.2;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+/************ Area Produtos *************/
+
+/************ Botão *************/
+.botao{
+	border-radius: 15px;
+	color: #111;
+	background: #f5f5f5;
+	border: 2px solid rgba(0,0,0,0.2);
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);
+}
+.botao:hover{
+	font-size: 15px;
+	background: rgba(0,0,0,0.1);
+	border: 2px solid rgba(0,40,256,0.5);
+	box-shadow: 1px 5px 5px 0px rgba(0,0,0,0.1);
+}
+
+.botao,.pbotao{
+	padding: 10px;
+	font-family: "SF Pro Text RegularItalic";
+}
+
+/************** Botão Flutuante ***********/
+#botao-flutuante{
+	opacity: 0.1;
+	border-radius: 30px;
+	border: 2px solid #111;
+	background: #f1f1f1;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	height: 40px;
+	width: 40px;
+	font-family: "SF Pro Text Medium";
+	text-decoration: none;
+}
+
+#botao-flutuante:hover{
+	transition: linear 0.5s;
+	font-size: 0.2em;
+	opacity: 0.9;
+	color: #256;
+	border: 2px solid #256;
+}
+
+#botao-flutuante::after {
+	 content: "↑";
+	 font-size: 32px;
+	 font-weight: bold;
+}
+
+
+/*
+-moz-
+-webkit-
+-o-
+*/
+
+/****************** Rodape ***************/
+
+#rodape{
+	padding: 15px 5px;
+	font-size: 0.7em;
+	text-align: center;
+	background: #111;
+	font-family: "SF Pro Text RegularItalic";
+	clear: both;
+}
+
+/****************** Mobile 568px ***************/
+@media only Screen and (max-width: 670.98px)
+	{	
+		#botao-flutuante{
+			display: none;
+		}
+		.caixa1, .caixa2, .caixa3, .caixa4{
+			min-width: 100%;
+			min-height: 25%;
+			padding: 10px;
+		}
+		.container-principal{
+			margin: 0;
+			padding: 0;
+			min-width: auto;
+			min-height: 100%;
+		}
+		.conteudo{
+			padding: 20px;
+			box-shadow: none;
+		}
+		.conteudo-card{
+			min-width: 100%;
+			height: auto;
+			padding: 10px;
+		}
+		.conteudo-titulo{
+			min-width: 100%;
+		}
+		.conteudo-titulo span.titulo{
+			padding: 20px;
+			font-size: 23px;
+			letter-spacing: 2px;
+		}
+		.botao{
+			width: 100%;
+		}
+		header.mobile {
+			border-radius: 0 0 5px 5px;
+			min-width: auto;
+			min-height: 60px auto;
+			background: #f1f1f1;
+			box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+			position: fixed;
+		}	
+		#rodape{
+			padding: 10px;
+			width: 100%;
+			height: auto;
+		}
+		header.mobile img{
+			margin: 10px;
+			width: 60px;
+			float: left;
+		}
+		.dropdown{
+			position: relative;
+			margin-left: 85%;
+		}
+		.btndrop{
+			display: block;
+			margin-top: 8px;
+			font-size: 50px;
+			width: 80px;
+			background: #f1f1f1;
+			border: none;
+		}
+		.btndrop::after{
+			color: #777;
+			content: "≡";
+			-moz-content: "≡";
+			-webkit-content: "≡";
+			-o-content: "≡";
+		}
+		.dropdown:hover nav.mobile{
+			display: block;
+		}
+		nav.mobile{
+			direction: ltr;
+			display: none;
+			margin: 0;
+			padding: 0;
+			width: 340px;
+			height: auto;
+		}
+		@media only Screen and (min-width: 339.98px){
+			nav.mobile{
+			direction: rtl;
+		}
+		}
+		nav.mobile ul{
+			margin: 0;
+			padding: 0;
+			width: 600px;
+		}
+		nav.mobile ul li{
+			width: 380px;
+			margin: 5px;
+			padding: 15px 0;
+			border-radius: 3px;
+			border: 1px solid rgba(0,0,0,0.1);
+			display: block;
+		}
+		nav.mobile ul a{
+			font-size: 1.2em;
+			color: #8282a2;
+		}
+		nav.mobile ul li a:hover{
+			color: #6e6ebd;
+		}
+		nav.mobile ul li a:link, a:visited{
+			color: #8282a2;
+		}
+		nav.mobile ul ul{
+			width: 100%;
+			right: 1px;
+			box-shadow: none;
+		}
+		nav.mobile ul ul li{
+			margin-top: 2px;
+			padding: 5px;
+			border-radius: 5px;
+			border: 1px solid rgba(0,0,0,0.1);
+		}
+		nav.mobile ul ul li a{
+			width: 320px;
+			font-size: 1.0em;
+			color: #8282a0;
+		}	
+		nav.mobile ul ul li a:hover{
+			color: #6e6ebd; 
+		}
+		nav.mobile ul li .sub-menu{
+			position: relative;
+			display: none;
+		}
+		nav.mobile ul li:hover .sub-menu, .sub-menu-download, .sub-menu-contato{
+			display: block;
+		}
+	
+	} 
